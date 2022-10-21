@@ -1,9 +1,46 @@
 /* You can add global styles to this file, and also import other style files */
+
+@font-face {
+    font-family: "TheRaveIsInYourPants";
+    src: local("TheRaveIsInYourPants"), url(./assets/fonts/TheRave.woff) format('woff2');
+}
+
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    background-color: #0A0A0F;
 }
-:root{
 
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
 }
+
+a {
+    text-decoration: none;
+}
+
+
+/* body {
+    font-size: 1.6rem;
+} */
+
+
+/* h1 {
+    font-size: 4.8rem;
+} */
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+    width: 90%;
+}
+
+:root {}

@@ -1,4 +1,36 @@
+// Usando mobile first
 html {
-    width: 100%;
     font-size: 62.5%;
+    font-family: "TheRaveIsInYourPants", Arial, Helvetica, sans-serif;
+    font-size: 1rem;
 }
+
+//Mobile
+.h1 {
+    font-size: 0.3rem;
+}
+
+.header__contenedor {
+    min-height: 60rem;
+    max-height: 100%;
+    max-width: 100%;
+    display: block;
+    background-image: url('../assets/Portada_arte.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
+    padding: 2rem 0;
+    color: aliceblue;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.header__contenedor::-webkit-scrollbar {
+    display: none;
+}
+
+@media screen {}
