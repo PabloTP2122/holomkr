@@ -2,23 +2,60 @@
 html {
     font-size: 62.5%;
     font-family: "TheRaveIsInYourPants", Arial, Helvetica, sans-serif;
-    font-size: 1rem;
+}
+
+body {
+    background-color: #0A0A0F;
 }
 
 //Mobile
-.h1 {
-    font-size: 0.3rem;
+// For animation
+.neonText {}
+
+h1 {
+    font-size: 1.3rem;
+    text-align: right;
+}
+
+h3 {
+    font-size: 0.8rem;
+    text-align: right;
+}
+
+.H1_blue {
+    color: #00C0FE;
+    animation: flicker 1.5s infinite alternate;
+    transform: translateX(1px) translateY(-24px);
+}
+
+// ANIMATION
+@keyframes flicker {
+    0%,
+    18%,
+    22%,
+    25%,
+    53%,
+    57%,
+    100% {
+        text-shadow: 0 0 3px #fff, 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #00C0FE, 0 0 20px #00C0FE, 0 0 25px #00C0FE, 0 0 51px #00C0FE, 0 0 10px #00C0FE;
+    }
+    20%,
+    24%,
+    55% {
+        text-shadow: none;
+    }
 }
 
 .header__contenedor {
     min-height: 60rem;
+    min-width: 60rem;
     max-height: 100%;
     max-width: 100%;
     display: block;
     background-image: url('../assets/Portada_arte.webp');
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: left center;
+    background-size: contain;
+    background-position: left top;
     padding: 2rem 0;
     color: aliceblue;
     overflow-y: hidden;
@@ -33,4 +70,182 @@ html {
     display: none;
 }
 
-@media screen {}
+//
+.header-grid {}
+
+// Contenido
+.contenido-header {
+    display: grid;
+    text-align: right;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding-top: 29px;
+    padding-right: 10px;
+    row-gap: 5px;
+    text-decoration: none;
+    font-size: 0.5rem
+}
+
+// Links
+a:link {
+    color: #00C0FE;
+}
+
+a:visited {
+    color: #00C0FE;
+}
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 1.8rem;
+        text-align: right;
+    }
+    h3 {
+        font-size: 1rem;
+        text-align: right;
+    }
+    a {
+        font-size: 0.8rem;
+    }
+    .H1_blue {
+        color: #00C0FE;
+        animation: flicker 1.5s infinite alternate;
+        transform: translateX(1px) translateY(-34px);
+    }
+    .header-grid {
+        display: grid;
+        grid-row: auto;
+        grid-template-rows: 1fr;
+        transform: translateY(9rem);
+        padding-right: 35px;
+        row-gap: 0px;
+    }
+    .header__contenedor {
+        min-height: 60rem;
+        max-height: 100%;
+        max-width: 100%;
+        display: block;
+        background-image: url('../assets/Portada_arte.webp');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: left top;
+        color: aliceblue;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
+    }
+    .contenido-header {
+        display: grid;
+        text-align: right;
+        grid-template-rows: 1fr 1fr 1fr;
+        transform: translateY(1rem);
+        padding-right: 10px;
+        row-gap: 5px;
+        text-decoration: none;
+        font-size: 0.5rem
+    }
+}
+
+@media (min-width:1024px) {
+    h1 {
+        font-size: 3rem;
+        text-align: right;
+    }
+    h3 {
+        font-size: 1rem;
+        text-align: right;
+    }
+    a {
+        font-size: 0.8rem;
+    }
+    .H1_blue {
+        color: #00C0FE;
+        animation: flicker 1.5s infinite alternate;
+        transform: translateX(1px) translateY(-56px);
+    }
+    .header-grid {
+        transform: translateY(15rem);
+        padding-right: 70px;
+    }
+    .header__contenedor {
+        min-height: 60rem;
+        max-height: 100%;
+        max-width: 100%;
+        display: block;
+        background-image: url('../assets/Portada_arte.webp');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: left top;
+        padding: 2rem 0;
+        color: aliceblue;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
+    }
+    .contenido-header {
+        display: grid;
+        text-align: right;
+        grid-template-rows: 1fr 1fr 1fr;
+        transform: translateY(1rem);
+        padding-right: 10px;
+        row-gap: 5px;
+        text-decoration: none;
+        font-size: 0.5rem
+    }
+}
+
+@media (min-width:1440px) {
+    h1 {
+        font-size: 4rem;
+        text-align: right;
+    }
+    h3 {
+        font-size: 2rem;
+        text-align: right;
+    }
+    a {
+        font-size: 1rem;
+    }
+    .H1_blue {
+        color: #00C0FE;
+        animation: flicker 1.5s infinite alternate;
+        transform: translateX(1px) translateY(-76px);
+    }
+    .header-grid {
+        transform: translateY(25rem);
+        padding-right: 70px;
+    }
+    .header__contenedor {
+        min-height: 60rem;
+        max-height: 100%;
+        max-width: 100%;
+        display: block;
+        background-image: url('../assets/Portada_arte.webp');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: left top;
+        padding: 2rem 0;
+        color: aliceblue;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
+    }
+    .contenido-header {
+        display: grid;
+        text-align: right;
+        grid-template-rows: 1fr 1fr 1fr;
+        transform: translateY(1rem);
+        padding-right: 10px;
+        row-gap: 5px;
+        text-decoration: none;
+        font-size: 0.5rem
+    }
+}
