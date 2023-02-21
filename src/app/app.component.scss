@@ -9,11 +9,8 @@ body {
 }
 
 //Mobile
-// For animation
-.neonText {}
-
 h1 {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     text-align: right;
 }
 
@@ -22,6 +19,25 @@ h3 {
     text-align: right;
 }
 
+h4 {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+
+/* .title_projects {
+    padding: 0px;
+    transform: translateX(0rem) translateY(0rem);
+    color: white;
+} */
+
+
+/* .H1_blue,
+.H1_white {
+    transform: translateX(1px) translateY(0px);
+} */
+
+// For animation
 .H1_blue {
     color: #00C0FE;
     animation: flicker 1.5s infinite alternate;
@@ -37,7 +53,7 @@ h3 {
     53%,
     57%,
     100% {
-        text-shadow: 0 0 3px #fff, 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #00C0FE, 0 0 20px #00C0FE, 0 0 25px #00C0FE, 0 0 51px #00C0FE, 0 0 10px #00C0FE;
+        text-shadow: 0 0 3px #fff, 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #00C0FE, 0 0 20px #00C0FE, 0 0 25px #00C0FE, 0 0 20px #00C0FE, 0 0 10px #00C0FE;
     }
     20%,
     24%,
@@ -47,42 +63,50 @@ h3 {
 }
 
 .header__contenedor {
+    display: block;
+    width: 100%;
+    z-index: 0;
     min-height: 60rem;
-    min-width: 60rem;
     max-height: 100%;
     max-width: 100%;
-    display: block;
     background-image: url('../assets/Portada_arte.webp');
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: left top;
-    padding: 2rem 0;
+    background-size: 1000px 500px;
+    /* background-position: left top; */
+    /* transform: translateX(-5rem); */
     color: aliceblue;
     overflow-y: hidden;
-    overflow-x: hidden;
-    -ms-overflow-style: none;
-    /* IE and Edge */
-    scrollbar-width: none;
-    /* Firefox */
 }
 
-.header__contenedor::-webkit-scrollbar {
-    display: none;
+div.header__contenedor {
+    background-position: left top, 1rem 900px;
 }
 
-//
-.header-grid {}
+// Nombre
+h3.name {
+    display: grid;
+    text-align: left;
+    transform: translateX(5.5rem) translateY(1rem);
+}
+
+//contenedor todo
+.header-grid {
+    display: grid;
+    transform: translateX(-4.6rem) translateY(1rem);
+    z-index: 500;
+}
 
 // Contenido
 .contenido-header {
     display: grid;
-    text-align: right;
+    text-align: center;
     grid-template-rows: 1fr 1fr 1fr;
     padding-top: 29px;
-    padding-right: 10px;
-    row-gap: 5px;
+    transform: translateX(6rem) translateY(25rem);
+    row-gap: 1rem;
     text-decoration: none;
-    font-size: 0.5rem
+    font-size: 0.7rem
 }
 
 // Links
@@ -93,6 +117,8 @@ a:link {
 a:visited {
     color: #00C0FE;
 }
+
+@media (min-width: 768px) {}
 
 @media (min-width: 768px) {
     h1 {
@@ -111,16 +137,21 @@ a:visited {
         animation: flicker 1.5s infinite alternate;
         transform: translateX(1px) translateY(-34px);
     }
+    h3.name {
+        display: grid;
+        text-align: left;
+        transform: translateX(32rem) translateY(1rem);
+    }
     .header-grid {
         display: grid;
         grid-row: auto;
         grid-template-rows: 1fr;
-        transform: translateY(9rem);
+        transform: translateX(-2rem) translateY(9rem);
         padding-right: 35px;
         row-gap: 0px;
     }
     .header__contenedor {
-        min-height: 60rem;
+        min-height: 66rem;
         max-height: 100%;
         max-width: 100%;
         display: block;
@@ -142,19 +173,26 @@ a:visited {
         grid-template-rows: 1fr 1fr 1fr;
         transform: translateY(1rem);
         padding-right: 10px;
-        row-gap: 5px;
+        row-gap: 0.5rem;
         text-decoration: none;
         font-size: 0.5rem
     }
 }
 
 @media (min-width:1024px) {
+    #root {
+        background-color: #0A0A0F;
+    }
     h1 {
         font-size: 3rem;
         text-align: right;
     }
     h3 {
         font-size: 1rem;
+        text-align: right;
+    }
+    h4 {
+        font-size: 1.4rem;
         text-align: right;
     }
     a {
@@ -165,8 +203,13 @@ a:visited {
         animation: flicker 1.5s infinite alternate;
         transform: translateX(1px) translateY(-56px);
     }
+    h3.name {
+        display: grid;
+        text-align: left;
+        transform: translateX(45rem) translateY(0rem);
+    }
     .header-grid {
-        transform: translateY(15rem);
+        transform: translateX(-2rem) translateY(17rem);
         padding-right: 70px;
     }
     .header__contenedor {
@@ -193,7 +236,7 @@ a:visited {
         grid-template-rows: 1fr 1fr 1fr;
         transform: translateY(1rem);
         padding-right: 10px;
-        row-gap: 5px;
+        row-gap: 1rem;
         text-decoration: none;
         font-size: 0.5rem
     }
@@ -208,6 +251,10 @@ a:visited {
         font-size: 2rem;
         text-align: right;
     }
+    h4 {
+        font-size: 1.4rem;
+        text-align: right;
+    }
     a {
         font-size: 1rem;
     }
@@ -216,12 +263,17 @@ a:visited {
         animation: flicker 1.5s infinite alternate;
         transform: translateX(1px) translateY(-76px);
     }
+    h3.name {
+        display: grid;
+        text-align: left;
+        transform: translateX(85rem) translateY(0rem);
+    }
     .header-grid {
-        transform: translateY(25rem);
+        transform: translateX(-5rem) translateY(27rem);
         padding-right: 70px;
     }
     .header__contenedor {
-        min-height: 60rem;
+        min-height: 65rem;
         max-height: 100%;
         max-width: 100%;
         display: block;
@@ -229,7 +281,6 @@ a:visited {
         background-repeat: no-repeat;
         background-size: contain;
         background-position: left top;
-        padding: 2rem 0;
         color: aliceblue;
         overflow-y: hidden;
         overflow-x: hidden;
@@ -244,8 +295,8 @@ a:visited {
         grid-template-rows: 1fr 1fr 1fr;
         transform: translateY(1rem);
         padding-right: 10px;
-        row-gap: 5px;
+        row-gap: 1rem;
         text-decoration: none;
-        font-size: 0.5rem
+        font-size: 1rem
     }
 }
