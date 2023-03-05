@@ -34,22 +34,21 @@ h4 {
 
 
 /* .title_projects {
-    padding: 0px;
-    transform: translateX(0rem) translateY(0rem);
-    color: white;
+  padding: 0px;
+  transform: translateX(0rem) translateY(0rem);
+  color: white;
 } */
 
-
-/* .H1_blue,
+.H1_blue,
 .H1_white {
     transform: translateX(1px) translateY(0px);
-} */
+}
 
 // For animation
 .H1_blue {
     color: #00C0FE;
     animation: flicker 1.5s infinite alternate;
-    transform: translateX(1px) translateY(-24px);
+    transform: translateX(1px) translateY(-34px);
 }
 
 // ANIMATION
@@ -93,8 +92,7 @@ div.header__contenedor {
 
 // Nombre
 h3.name {
-    display: grid;
-    text-align: left;
+    display: flex;
     transform: translateX(5.5rem) translateY(1rem);
 }
 
@@ -141,11 +139,10 @@ a:visited {
     .H1_blue {
         color: #00C0FE;
         animation: flicker 1.5s infinite alternate;
-        transform: translateX(1px) translateY(-34px);
+        transform: translateX(1px) translateY(-44px);
     }
     h3.name {
-        display: grid;
-        text-align: left;
+        display: flex;
         transform: translateX(32rem) translateY(1rem);
     }
     .header-grid {
@@ -207,19 +204,18 @@ a:visited {
     .H1_blue {
         color: #00C0FE;
         animation: flicker 1.5s infinite alternate;
-        transform: translateX(1px) translateY(-56px);
+        transform: translateX(1px) translateY(-71px);
     }
     h3.name {
-        display: grid;
-        text-align: left;
-        transform: translateX(45rem) translateY(0rem);
+        display: flex;
+        align-items: center;
     }
     .header-grid {
-        transform: translateX(-2rem) translateY(17rem);
+        transform: translateX(-2rem) translateY(6rem);
         padding-right: 70px;
     }
     .header__contenedor {
-        min-height: 60rem;
+        min-height: 55rem;
         max-height: 100%;
         max-width: 100%;
         display: block;
@@ -267,15 +263,73 @@ a:visited {
     .H1_blue {
         color: #00C0FE;
         animation: flicker 1.5s infinite alternate;
-        transform: translateX(1px) translateY(-76px);
+        transform: translateX(1px) translateY(-98px);
     }
     h3.name {
-        display: grid;
-        text-align: left;
-        transform: translateX(85rem) translateY(0rem);
+        display: flex;
+        transform: translateX(61rem) translateY(-2.5rem);
     }
     .header-grid {
-        transform: translateX(-5rem) translateY(27rem);
+        transform: translateX(-2rem) translateY(15rem);
+        padding-right: 70px;
+    }
+    .header__contenedor {
+        min-height: 58.96rem;
+        max-height: 110%;
+        max-width: 100%;
+        display: block;
+        background-image: url('../assets/Portada_arte.webp');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: left top;
+        color: aliceblue;
+        overflow-y: hidden!important;
+        overflow-x: hidden;
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
+    }
+    .contenido-header {
+        display: grid;
+        text-align: right;
+        grid-template-rows: 1fr 1fr 1fr;
+        transform: translateY(1rem);
+        padding-right: 10px;
+        row-gap: 1rem;
+        text-decoration: none;
+        font-size: 1rem
+    }
+}
+
+// 4K
+@media (min-width:2560px) {
+    h1 {
+        font-size: 4rem;
+        text-align: right;
+    }
+    h3 {
+        font-size: 2rem;
+        text-align: right;
+    }
+    h4 {
+        font-size: 1.4rem;
+        text-align: right;
+    }
+    a {
+        font-size: 1rem;
+    }
+    .H1_blue {
+        color: #00C0FE;
+        animation: flicker 1.5s infinite alternate;
+        transform: translateX(1px) translateY(-98px);
+    }
+    h3.name {
+        display: flex;
+        transform: translateX(92rem) translateY(-2.5rem);
+    }
+    .header-grid {
+        transform: translateX(-23rem) translateY(26rem);
         padding-right: 70px;
     }
     .header__contenedor {
