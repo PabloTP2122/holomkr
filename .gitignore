@@ -1,5 +1,5 @@
 ### Angular ###
-## Angular ##
+
 # compiled output
 dist/
 tmp/
@@ -21,7 +21,7 @@ libpeerconnection.log/
 npm-debug.log
 testem.log
 typings/
-.angular/
+.angular/*
 
 # e2e
 e2e/*.js
