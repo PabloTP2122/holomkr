@@ -1,5 +1,8 @@
-### Angular ###
+# Created by https://www.toptal.com/developers/gitignore/api/angular,windows,macos,linux
+# Edit at https://www.toptal.com/developers/gitignore?templates=angular,windows,macos,linux
 
+### Angular ###
+## Angular ##
 # compiled output
 dist/
 tmp/
@@ -104,4 +107,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/windows,macos,linux,angular
+# End of https://www.toptal.com/developers/gitignore/api/angular,windows,macos,linux
