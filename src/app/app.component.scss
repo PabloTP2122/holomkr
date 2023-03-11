@@ -1,0 +1,291 @@
+// Usando mobile first
+html {
+    font-size: 62.5%;
+    font-family: "TheRaveIsInYourPants", Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #0A0A0F;
+}
+
+footer {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: start;
+    font-size: 0.6rem;
+    color: #fff;
+    background-color: #00394d;
+}
+
+//Mobile
+h1 {
+    font-size: 1.4rem;
+    text-align: right;
+}
+
+h3 {
+    font-size: 0.8rem;
+    text-align: right;
+}
+
+h4 {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+
+/* .title_projects {
+padding: 0px;
+transform: translateX(0rem) translateY(0rem);
+color: white;
+} */
+
+.H1_blue,
+.H1_white {
+    transform: translateX(1px) translateY(0px);
+}
+
+// For animation
+.H1_blue {
+    color: #00C0FE;
+    animation: flicker 1.5s infinite alternate;
+    transform: translateX(1px) translateY(-34px);
+}
+
+// ANIMATION
+@keyframes flicker {
+    0%,
+    18%,
+    22%,
+    25%,
+    53%,
+    57%,
+    100% {
+        text-shadow: 0 0 3px #fff, 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #00C0FE, 0 0 20px #00C0FE, 0 0 25px #00C0FE, 0 0 20px #00C0FE, 0 0 10px #00C0FE;
+    }
+    20%,
+    24%,
+    55% {
+        text-shadow: none;
+    }
+}
+
+.header__contenedor {
+    display: block;
+    width: 100%;
+    z-index: 0;
+    min-height: 60rem;
+    max-height: 100%;
+    max-width: 100%;
+    background-image: url('../assets/mobile_screen.webp');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 50rem 33rem;
+    /* background-position: left top; */
+    /* transform: translateX(-5rem); */
+    color: aliceblue;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    min-width: 120px;
+}
+
+div.header__contenedor {
+    background-position: left top, 1rem 900px;
+}
+
+// Nombre
+h3.name {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+//contenedor todo
+.header-grid {
+    display: grid;
+    transform: translateX(-4.6rem) translateY(1rem);
+    z-index: 500;
+}
+
+// Contenido
+.contenido-header {
+    display: grid;
+    text-align: center;
+    grid-template-rows: 1fr;
+    padding-top: 29px;
+    align-items: center;
+    row-gap: 1rem;
+    text-decoration: none;
+    font-size: 0.7rem;
+    max-width: 3rem;
+    margin: 0px;
+    transform: translateX(6rem) translateY(25rem);
+}
+
+// Links
+a:link {
+    color: #00C0FE;
+}
+
+a:visited {
+    color: #00C0FE;
+}
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 1.8rem;
+        text-align: right;
+    }
+    h3 {
+        font-size: 1rem;
+        text-align: right;
+    }
+    a {
+        font-size: 0.8rem;
+    }
+    .H1_blue {
+        color: #00C0FE;
+        animation: flicker 1.5s infinite alternate;
+        transform: translateX(1px) translateY(-44px);
+    }
+    h3.name {
+        display: flex;
+    }
+    .header-grid {
+        display: grid;
+        grid-row: auto;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+        padding-right: 35px;
+        row-gap: 0px;
+    }
+    .header__contenedor {
+        min-height: 66rem;
+        max-height: 100%;
+        max-width: 100%;
+        display: block;
+        background-image: url('../assets/Portada_arte.webp');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: left top;
+        color: aliceblue;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
+    }
+    .contenido-header {
+        display: grid;
+        text-align: end;
+        grid-template-rows: 1fr;
+        transform: translatex(35rem) translateY(1rem);
+        padding-right: 10px;
+        row-gap: 0.5rem;
+        text-decoration: none;
+        font-size: 0.5rem;
+        max-width: 14rem;
+    }
+}
+
+@media (min-width:1024px) {
+    #root {
+        background-color: #0A0A0F;
+    }
+    h1 {
+        font-size: 3rem;
+        text-align: right;
+    }
+    h3 {
+        font-size: 1rem;
+        text-align: right;
+    }
+    h4 {
+        font-size: 1.4rem;
+        text-align: right;
+    }
+    a {
+        font-size: 0.8rem;
+    }
+    .H1_blue {
+        color: #00C0FE;
+        animation: flicker 1.5s infinite alternate;
+        transform: translateX(1px) translateY(-71px);
+    }
+    h3.name {
+        display: flex;
+        text-align: center;
+        align-items: center;
+    }
+    .header__contenedor {
+        max-height: 100%;
+        max-width: 100%;
+        display: block;
+        background-image: url('../assets/Portada_arte.webp');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: left top;
+        padding: 2rem 0;
+        color: aliceblue;
+        overflow-y: hidden!important;
+        overflow-x: hidden;
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
+    }
+    .contenido-header {
+        max-width: 25rem;
+    }
+}
+
+@media (min-width:1440px) {
+    h1 {
+        font-size: 4rem;
+        text-align: right;
+    }
+    h3 {
+        font-size: 2rem;
+        text-align: right;
+    }
+    h4 {
+        font-size: 1.4rem;
+        text-align: right;
+    }
+    a {
+        font-size: 1rem;
+    }
+    .H1_blue {
+        color: #00C0FE;
+        animation: flicker 1.5s infinite alternate;
+        transform: translateX(1px) translateY(-98px);
+    }
+    h3.name {
+        display: flex;
+        text-align: center;
+        align-items: center;
+    }
+    .header-grid {
+        padding-right: 7rem;
+    }
+    .header__contenedor {
+        min-height: 58.96rem;
+        max-height: 110%;
+        max-width: 100%;
+        display: block;
+        background-image: url('../assets/Portada_arte.webp');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: left top;
+        color: aliceblue;
+        overflow-y: hidden!important;
+        overflow-x: hidden;
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
+    }
+    .contenido-header {
+        max-width: 30rem;
+    }
+}
