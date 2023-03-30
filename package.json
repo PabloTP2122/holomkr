@@ -23,10 +23,14 @@
     "zone.js": "~0.12.0"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^15.2.1",
+    "@angular-devkit/build-angular": "^15.2.3",
+    "@angular/cdk": "^15.2.2",
     "@angular/cli": "~15.2.1",
     "@angular/compiler-cli": "^15.2.0",
+    "@fortawesome/angular-fontawesome": "^0.12.1",
+    "@fortawesome/free-solid-svg-icons": "^6.4.0",
     "@types/jasmine": "~4.3.0",
+    "angular-google-tag-manager": "^1.7.0",
     "autoprefixer": "^10.4.14",
     "jasmine-core": "~4.5.0",
     "karma": "~6.4.0",

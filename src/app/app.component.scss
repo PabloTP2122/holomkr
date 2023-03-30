@@ -79,7 +79,7 @@ color: white;
     background-image: url('../assets/mobile_screen.webp');
     background-repeat: no-repeat;
     background-size: contain;
-    background-size: 50rem 33rem;
+    background-size: 45rem 33rem;
     /* background-position: left top; */
     /* transform: translateX(-5rem); */
     color: aliceblue;
@@ -128,6 +128,26 @@ a:link {
 
 a:visited {
     color: #00C0FE;
+}
+
+.example-list {
+    width: 15rem;
+    border: solid 1px #fff;
+    border-radius: 5px;
+    background: #0A0A0F;
+    text-align: center;
+    color: #BEBEBE;
+    padding: 1rem;
+}
+
+.example-list>li {
+    list-style-type: none;
+    border-bottom: solid 1px blue;
+    padding: 8px 0;
+}
+
+.example-list>li:last-child {
+    border-bottom: none;
 }
 
 @media (min-width: 768px) {
@@ -287,5 +307,13 @@ a:visited {
     }
     .contenido-header {
         max-width: 30rem;
+        transform: translatex(57rem) translateY(2rem);
+    }
+}
+
+@media (min-width:1920px) {
+    .contenido-header {
+        max-width: 30rem;
+        transform: translatex(85rem) translateY(12rem);
     }
 }

@@ -8,6 +8,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+//CDK
+@import '@angular/cdk/overlay-prebuilt.css';
 * {
     margin: 0px;
     padding: 0px;
