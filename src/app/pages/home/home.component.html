@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pablo Torres</title>
+  </head>
+
+  <body *ngIf="change">
+    <header class="header__contenedor">
+      <div class="contenedor header-grid">
+        <h1 class="white-heading">HOLOMAKER</h1>
+        <h1 class="blue-heading">HOLOMAKER</h1>
+        <h3
+          class="frase flex flex-row lg:items-end lg:justify-end md:items-end md:justify-end sm:justify-center"
+        >
+          Let me see the hologram inside your head to make it real.
+        </h3>
+        <h3 class="name">Ing. Pablo Torres Pérez</h3>
+        <div
+          class="flex flex-col lg:items-end lg:justify-end md:items-center md:justify-end contenido-header"
+        >
+          <!-- <a href="https://drive.google.com/file/d/1jjOrEjlPdkl1ZkAH4mAot_peSWXr0Cpn/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                    <button class="flex justify-center hover:bg-sky-600 hover:text-cyan-50 bg-transparent rounded-lg border border-cyan-400 w-96">
+              <h4>Ver CV</h4>
+            </button>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1sb5mjo_bRnvId3r7uSBManO1TH8P55Yz/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                    <button class="flex justify-center hover:bg-sky-600 hover:text-cyan-50 bg-transparent rounded-lg border border-cyan-400 w-96">
+              <h4>Resume</h4>
+            </button>
+                </a> -->
+
+          <a
+            href="https://www.linkedin.com/in/pablo-torres-p%C3%A9rez-9009ba140"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button
+              class="flex justify-center hover:bg-sky-600 hover:text-cyan-50 bg-transparent rounded-lg border border-cyan-400 w-96"
+            >
+              <h4>Linked in</h4>
+            </button>
+          </a>
+
+          <a routerLink="/portfolio">
+            <button
+              class="flex justify-center hover:bg-sky-600 hover:text-cyan-50 bg-transparent rounded-lg border border-cyan-400 w-96"
+            >
+              <h4>Web portfolio</h4>
+            </button>
+          </a>
+
+          <a
+            href="https://github.com/PabloTP2122"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button
+              class="flex justify-center hover:bg-sky-600 hover:text-cyan-50 bg-transparent rounded-lg border border-cyan-400 w-96"
+              type="button"
+            >
+              <h4>GitHub</h4>
+            </button>
+          </a>
+          <a>
+            <button
+              class="flex justify-center hover:bg-sky-600 hover:text-cyan-200 bg-transparent rounded-lg border border-cyan-900 w-96"
+              type="button"
+              (click)="isOpen = !isOpen"
+              cdkOverlayOrigin
+              #menu="cdkOverlayOrigin"
+            >
+              <h4
+                class="text-gray-400 hover:text-gray-300 active:text-gray-300"
+              >
+                {{isOpen ? "Close" : "Mechatronics"}}
+              </h4>
+            </button>
+          </a>
+          <!-- <a href="" target="_blank" rel="noopener noreferrer">portafolio mecatrónico</a> -->
+          <!-- <a href="#">Ver portafolio diseños mecatrónicos</a> -->
+        </div>
+        <ng-template
+          cdkConnectedOverlay
+          [cdkConnectedOverlayOrigin]="menu"
+          [cdkConnectedOverlayOpen]="isOpen"
+        >
+          <ul class="example-list">
+            <li>Work in progress</li>
+          </ul>
+        </ng-template>
+      </div>
+    </header>
+    <main></main>
+    <footer>
+      <p class="footer">Made width ❤️ Angular by Pablo Torres Pérez - 2023</p>
+    </footer>
+  </body>
+</html>

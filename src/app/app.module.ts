@@ -12,13 +12,15 @@ import { MechatronicpComponent } from './components/mechatronicp/mechatronicp.co
 import { GoogleTagManagerModule } from 'angular-google-tag-manager';
 import { WebprojectsComponent } from './components/webprojects/webprojects.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { HomeComponent } from './pages/home/home.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     MechatronicpComponent,
-    WebprojectsComponent
+    WebprojectsComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
