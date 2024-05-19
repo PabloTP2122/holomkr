@@ -22,6 +22,12 @@
     box-sizing: inherit;
 }
 
+:root {
+    --text-color-blue: #00C0FE;
+    --blue-holo-scroll: #00befec1;
+    --text-color-white: aliceblue;
+}
+
 a {
     text-decoration: none;
 }
@@ -35,4 +41,31 @@ img {
     max-width: 120rem;
     margin: 0 auto;
     /* width: 90%; */
+}
+
+
+/* Scroll */
+
+::-webkit-scrollbar {
+    width: 0.8rem;
+    /* Ancho de la barra de desplazamiento */
+}
+
+::-webkit-scrollbar-track {
+    background-color: #e5e5e5;
+    /* Color del fondo de la barra de desplazamiento */
+    border-radius: 0.1rem;
+    /* Borde redondeado de la barra de desplazamiento */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--blue-holo-scroll);
+    /* Color del pulgar de la barra de desplazamiento */
+    border-radius: 0.1rem;
+    /* Borde redondeado del pulgar de la barra de desplazamiento */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--blue-holo-scroll);
+    /* Color del pulgar de la barra de desplazamiento en hover */
 }

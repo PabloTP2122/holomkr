@@ -12,6 +12,7 @@ export class HomeComponent implements OnInit {
   title = 'holomkr';
   isOpen = false;
   routeSubscription!: Subscription;
+  subHeaderText = 'Convirtiendo los retos en ladrillos para construir nuestro futuro.';
 
   constructor(
     private gtmService: GoogleTagManagerService,
@@ -36,7 +37,7 @@ export class HomeComponent implements OnInit {
 
     this.routeSubscription = this.router.events.subscribe(event => {
       if (event instanceof NavigationStart) {
-        console.log(event);
+        //console.log(event);
         event.url === '/' ? this.change = true : this.change = !this.change;
       }
     });
