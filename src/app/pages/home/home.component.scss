@@ -159,6 +159,77 @@ a:visited {
   border-bottom: none;
 }
 
+.footer__clients-opinions {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-items: center;
+  min-width: 90vw;
+  max-height: fit-content;
+  margin: 1rem;
+}
+
+.footer__img-client {
+  width: 100%;
+  height: 90px;
+  position: relative;
+  min-width: fit-content;
+  max-width: 50vw;
+  background: url('../../../assets/Cliente_01_workana.jpg') no-repeat center center;
+  background-size: contain;
+  clip-path: inset(0 round 10px);
+  animation: change-bg 10s linear infinite;
+}
+
+@keyframes change-bg {
+  0% {
+    background: url('../../../assets/Cliente_01_workana.jpg') no-repeat center center;
+    background-size: contain;
+  }
+
+  20% {
+    background: url('../../../assets/Cliente_01_workana.jpg') no-repeat center center;
+    background-size: contain;
+  }
+
+  25% {
+    background: url('../../../assets/Cliente_01_workana.jpg') no-repeat center center;
+    background-size: contain;
+  }
+
+  45% {
+    background: url('../../../assets/Cliente_02_workana.jpg') no-repeat center center;
+    background-size: contain;
+  }
+
+  55% {
+    background: url('../../../assets/Cliente_02_workana.jpg') no-repeat center center;
+    background-size: contain;
+  }
+
+  65% {
+    background: url('../../../assets/Cliente_02_workana.jpg') no-repeat center center;
+    background-size: contain;
+  }
+
+  85% {
+    background: url('../../../assets/Cliente_03_workana.jpg') no-repeat center center;
+    background-size: contain;
+  }
+
+  90% {
+    background: url('../../../assets/Cliente_03_workana.jpg') no-repeat center center;
+    background-size: contain;
+  }
+
+  100% {
+    background: url('../../../assets/Cliente_03_workana.jpg') no-repeat center center;
+    background-size: contain;
+  }
+}
+
 @media (min-width: 768px) {
   h1 {
     font-size: 1.8rem;
@@ -289,6 +360,12 @@ a:visited {
 
   .contenido-header {
     transform: translateX(360%) translateY(30%);
+  }
+
+  .footer__clients-opinions {
+    width: 100%;
+    height: 100%;
+    background-color: #00d9ff;
   }
 }
 
